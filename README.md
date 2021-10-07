@@ -11,6 +11,7 @@ WebGL Referenzauflösung (960x600)
 
 ### Visuelle Einblicke in das Projekt: 
 Screenshots (Konzept, Spielabschnitte), Video (< 100MB, < 3 min)
+![05LMMurauer](https://user-images.githubusercontent.com/90834523/136345874-69c1845d-2939-4a5a-867b-b070cc120a05.jpeg)
 
 ### Notwendiges für die Ausführung: 
 z.B.: Installationsprozess, Schritt für Schritt Anweisung, spezielles Packages welches geladen werden muss, etc.  
@@ -33,4 +34,4 @@ Bitte hier nicht, ich kann nicht programmieren, sondern was wurde im Projekt von
 - [ ] Neptune
 - [ ] Comet Haley
 
-Copyright by you :)
+Copyright by Lisa :)
