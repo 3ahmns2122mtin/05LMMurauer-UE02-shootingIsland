@@ -1,23 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject target;
     public GameObject parentOfTargets;
+    public GameObject objCounter;
 
+    private Text textCounter;
     public bool won;
     public int score;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        textCounter = objCounter.GetComponent<Text>();
         won = false;
-
         InvokeRepeating("Spawn", 1f, 2f);
 
     }
+
+   
 
     //Spawn a target at a randm position within a specified x and y range.
     //Instantiate (make a concret GameObject, i.e., a clone from the given prefabs target) the
@@ -34,7 +40,6 @@ public class GameManager : MonoBehaviour
         GameObject myTarget = Instantiate(target, parentOfTargets.transform);
         myTarget.transform.localPosition = random2DPosition;
 
-        Debug.Log(random2DPosition);
     }
 
     // Update is called once per frame
@@ -44,6 +49,7 @@ public class GameManager : MonoBehaviour
         {
             CancelInvoke("Spawn");
         }
+
         else
         {
             Debug.Log(won);
@@ -59,8 +65,9 @@ public class GameManager : MonoBehaviour
     {
         score++;
         Debug.Log("increment ..." + score);
+        textCounter.text = score.ToString();
 
-        if(score > 10)
+        if(score == 10)
         {
             won = true;
         }
