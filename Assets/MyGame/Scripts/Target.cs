@@ -7,6 +7,7 @@ public class Target : MonoBehaviour
     [SerializeField] private int secToDestroy;
     private GameManager gameManager;
 
+
     // Start is called before the first frame update
     void Start()
     {
